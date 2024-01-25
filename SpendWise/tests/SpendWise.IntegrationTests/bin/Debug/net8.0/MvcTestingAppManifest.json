@@ -1,0 +1,6 @@
+{
+  "SpendWise.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/nilton\/nil70n\/repo\/spend-wise\/SpendWise\/src\/SpendWise.Core",
+  "SpendWise.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/nilton\/nil70n\/repo\/spend-wise\/SpendWise\/src\/SpendWise.Infrastructure",
+  "SpendWise.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/nilton\/nil70n\/repo\/spend-wise\/SpendWise\/tests\/SpendWise.UnitTests",
+  "SpendWise.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/nilton\/nil70n\/repo\/spend-wise\/SpendWise\/src\/SpendWise.UseCases"
+}
