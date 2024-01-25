@@ -294,3 +294,4 @@
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.UnitTests/obj/Debug/net8.0/SpendWise.UnitTests.pdb
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.UnitTests/obj/Debug/net8.0/SpendWise.UnitTests.genruntimeconfig.cache
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.UnitTests/obj/Debug/net8.0/ref/SpendWise.UnitTests.dll
+/home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.UnitTests/obj/Debug/net8.0/SpendWise.UnitTests.sourcelink.json

@@ -624,3 +624,4 @@
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Web/obj/Debug/net8.0/SpendWise.Web.pdb
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Web/obj/Debug/net8.0/SpendWise.Web.genruntimeconfig.cache
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Web/obj/Debug/net8.0/ref/SpendWise.Web.dll
+/home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Web/obj/Debug/net8.0/SpendWise.Web.sourcelink.json

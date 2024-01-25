@@ -528,3 +528,4 @@
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.FunctionalTests/obj/Debug/net8.0/SpendWise.FunctionalTests.pdb
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.FunctionalTests/obj/Debug/net8.0/SpendWise.FunctionalTests.genruntimeconfig.cache
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.FunctionalTests/obj/Debug/net8.0/ref/SpendWise.FunctionalTests.dll
+/home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.FunctionalTests/obj/Debug/net8.0/SpendWise.FunctionalTests.sourcelink.json

@@ -13,3 +13,4 @@
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.UseCases/obj/Debug/net8.0/refint/SpendWise.UseCases.dll
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.UseCases/obj/Debug/net8.0/SpendWise.UseCases.pdb
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.UseCases/obj/Debug/net8.0/ref/SpendWise.UseCases.dll
+/home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.UseCases/obj/Debug/net8.0/SpendWise.UseCases.sourcelink.json

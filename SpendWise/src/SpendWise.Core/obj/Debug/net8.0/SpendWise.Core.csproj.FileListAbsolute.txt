@@ -10,3 +10,4 @@
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Core/obj/Debug/net8.0/refint/SpendWise.Core.dll
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Core/obj/Debug/net8.0/SpendWise.Core.pdb
 /home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Core/obj/Debug/net8.0/ref/SpendWise.Core.dll
+/home/nilton/nil70n/repo/spend-wise/SpendWise/src/SpendWise.Core/obj/Debug/net8.0/SpendWise.Core.sourcelink.json

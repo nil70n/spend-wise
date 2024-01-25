@@ -498,3 +498,4 @@
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.IntegrationTests/obj/Debug/net8.0/SpendWise.IntegrationTests.pdb
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.IntegrationTests/obj/Debug/net8.0/SpendWise.IntegrationTests.genruntimeconfig.cache
 /home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.IntegrationTests/obj/Debug/net8.0/ref/SpendWise.IntegrationTests.dll
+/home/nilton/nil70n/repo/spend-wise/SpendWise/tests/SpendWise.IntegrationTests/obj/Debug/net8.0/SpendWise.IntegrationTests.sourcelink.json
