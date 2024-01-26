@@ -7,8 +7,9 @@ using SpendWise.Core.TransactionAggregate.Events;
 namespace SpendWise.Core.TransactionAggregate.Handlers;
 
 public class TransactionCreatedHandler(IUpdateBalanceService updateBalanceService,
-                                         IRepository<Transaction> repository,
-                                         ILogger<TransactionCreatedHandler> logger) : INotificationHandler<TransactionCreatedEvent>
+                                       IRepository<Transaction> repository,
+                                       ILogger<TransactionCreatedHandler> logger)
+  : INotificationHandler<TransactionCreatedEvent>
 {
     public async Task Handle(TransactionCreatedEvent notification, CancellationToken cancellationToken)
     {

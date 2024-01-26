@@ -3,38 +3,27 @@ using Ardalis.SharedKernel;
 using Microsoft.Extensions.Logging;
 using SpendWise.Core.AccountAggregate;
 using SpendWise.Core.Interfaces;
+using SpendWise.Core.Services.LoggerDefinitions;
 using SpendWise.Core.TransactionAggregate;
 
 namespace SpendWise.Core.Services;
 
-public class UpdateBalanceService(
-  IRepository<Account> repository,
-  ILogger<UpdateBalanceService> logger) : IUpdateBalanceService
+public class UpdateBalanceService(IRepository<Account> repository,
+                                  ILogger<UpdateBalanceService> logger)
+  : IUpdateBalanceService
 {
-    public async Task<Result<int>> UpdateBalance(Transaction transaction, CancellationToken cancellationToken)
+    public async Task<Result<int>> UpdateBalance(Transaction transaction,
+                                                 CancellationToken cancellationToken)
     {
         // TODO: Implement shared lock
 
-        /*         var logScope = LoggerMessage.DefineScope("UpdateBalance"); */
-        /*         var logStarted = LoggerMessage.Define<Guid, Guid>(LogLevel.Information, */
-        /*                                                           new EventId(0), */
-        /*                                                           "Balance Update started. Account: {transaction.Account.Id}, Transaction: {transaction.Id}"); */
-
-        /*         logStarted(logger, transaction.Account.Id, transaction.Id, null); */
-
-
-        logger.LogInformation("Balance Update started. Account: {transaction.Account.Id}, Transaction: {transaction.Id}",
-                               transaction.Account.Id,
-                               transaction.Id);
-
+        logger.UpdateBalanceStarted(transaction.Id, DateTime.UtcNow);
 
         var accountToUpdate = await repository.GetByIdAsync(transaction.Account.Id, cancellationToken);
 
         if (accountToUpdate is null)
         {
-            logger.LogError(message: "Balance Update failed: Account {transaction.Account.Id} not found.",
-                             args: transaction.Account.Id);
-
+            logger.UpdateBalanceAccountNotFound(transaction.Account.Id, DateTime.UtcNow);
             return Result.NotFound("Account not found.");
         }
 
@@ -50,13 +39,11 @@ public class UpdateBalanceService(
         }
         catch (Exception ex)
         {
-            logger.LogCritical(exception: ex,
-                                message: "Failed to update Account Balance. {transaction}",
-                                args: transaction);
-
-            return Result.Error("Failed to update Account Balance.");
+            logger.UpdateBalanceAcccountError(transaction.Id, DateTime.UtcNow, ex);
+            return Result.CriticalError("Failed to update Account Balance.");
         }
 
+        logger.UpdateBalanceAccountSuccess(transaction.Id, DateTime.UtcNow);
         return Result.Success(newBalance, "Account Balance updated.");
     }
 }

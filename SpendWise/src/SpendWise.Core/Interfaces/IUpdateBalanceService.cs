@@ -5,5 +5,6 @@ namespace SpendWise.Core.Interfaces;
 
 public interface IUpdateBalanceService
 {
-    Task<Result<int>> UpdateBalance(Transaction transaction, CancellationToken cancellationToken = default);
+    Task<Result<int>> UpdateBalance(Transaction transaction,
+                                    CancellationToken cancellationToken = default);
 }

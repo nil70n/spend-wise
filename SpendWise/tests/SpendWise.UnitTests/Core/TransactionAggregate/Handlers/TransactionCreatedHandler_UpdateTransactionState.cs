@@ -23,7 +23,7 @@ public class TransactionCreatedHandler_UpdateTransactionState
 
     public TransactionCreatedHandler_UpdateTransactionState()
     {
-        _service
+        _ = _service
           .UpdateBalance(Arg.Any<Transaction>(), Arg.Any<CancellationToken>())
           .Returns(s => AccountIdCheck(s.Arg<Transaction>()));
 
