@@ -1,4 +1,5 @@
-﻿using Ardalis.Result;
+﻿using System.Globalization;
+using Ardalis.Result;
 using Ardalis.SharedKernel;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
@@ -19,7 +20,7 @@ public class UpdateBalanceService_UpdateBalance
 
     public UpdateBalanceService_UpdateBalance()
     {
-        _repository
+        _ = _repository
           .GetByIdAsync(_accountId, Arg.Any<CancellationToken>())
           .Returns(CreateAccount(_accountId));
 
@@ -28,7 +29,7 @@ public class UpdateBalanceService_UpdateBalance
 
     private static Account CreateAccount(Guid accountId)
     {
-        return new Account("user", "account", new System.Globalization.CultureInfo("en-US"), DateTime.UtcNow)
+        return new Account("user", "account", new CultureInfo("en-US"), DateTime.UtcNow)
         {
             Id = accountId
         };

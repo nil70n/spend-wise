@@ -2,19 +2,19 @@
 using SpendWise.Core.AccountAggregate;
 using Xunit;
 
-namespace SpendWise.UnitTests.AccountAggregate;
+namespace SpendWise.UnitTests.Core.AccountAggregate;
 
 public class AccountConstructor
 {
-    private readonly string userKey = "user";
-    private readonly string accountName = "AccountName";
-    private readonly CultureInfo culture = new CultureInfo("en-US");
+    private readonly string _userKey = "user";
+    private readonly string _accountName = "AccountName";
+    private readonly CultureInfo _culture = new("en-US");
 
     private Account CreateAccount(DateTime createdAt)
     {
-        return new Account(userKey,
-                           accountName,
-                           culture,
+        return new Account(_userKey,
+                           _accountName,
+                           _culture,
                            createdAt);
     }
 
@@ -24,9 +24,9 @@ public class AccountConstructor
         var now = DateTime.UtcNow;
         var account = CreateAccount(now);
 
-        Assert.Equal(userKey, account.UserKey);
-        Assert.Equal(accountName, account.Name);
-        Assert.Equal(culture, account.Culture);
+        Assert.Equal(_userKey, account.UserKey);
+        Assert.Equal(_accountName, account.Name);
+        Assert.Equal(_culture, account.Culture);
         Assert.Equal(now, account.CreatedAt);
     }
 }

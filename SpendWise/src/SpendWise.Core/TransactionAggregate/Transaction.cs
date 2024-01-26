@@ -12,6 +12,12 @@ public class Transaction(Account account,
     public Account Account { get; private set; } = Guard.Against.Null(account, nameof(account));
     public int Value { get; private set; } = Guard.Against.Zero(value, nameof(value));
     public TransactionType Type { get; private set; } = type;
+    public TransactionState State { get; private set; } = TransactionState.New;
     public DateTime CreatedAt { get; private set; } = Guard.Against.Null(createdAt, nameof(createdAt));
+
+    public void NextState()
+    {
+        State = TransactionState.Calculated;
+    }
 }
 
